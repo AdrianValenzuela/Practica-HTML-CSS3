@@ -1,0 +1,225 @@
+.logo {
+    width: 510px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-n {
+    position: relative;
+    width: 60px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.logo-n>div {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 100%;
+}
+
+.logon-1 {
+    background-color: darkred;
+    left: 0;
+}
+
+.logon-2 {
+    background-color: darkred;
+    left: 0;
+    z-index: 1;
+    transform: skewX(21.8deg);
+    transform-origin: top left;
+    box-shadow: 0 0 40px black;
+}
+
+.logon-3 {
+    background-color: darkred;
+    right: 0;
+}
+
+.logo-a {
+    position: relative;
+    width: 60px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.logo-a>div {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 100%;
+}
+
+.logoa-1 {
+    background-color: darkred;
+    left: 0;
+    z-index: 1;
+    transform: skewX(-11.3deg);
+    transform-origin: bottom left;
+    box-shadow: 0 0 40px black;
+}
+
+.logoa-2 {
+    background-color: darkred;
+    right: 0;
+    z-index: 1;
+    transform: skewX(11.3deg);
+    transform-origin: bottom left;
+    box-shadow: 0 0 40px black;
+}
+
+/* para hacer la T me he basado en este codepen https://codepen.io/lenngren/pen/bNQLvJ. El resto de letras las he sacado en base a esta T */
+.logo-t {
+    position: relative;
+    width: 60px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.logo-t>div {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 100%;
+}
+
+.logot-1 {
+    background-color: darkred;
+    left: 0;
+    margin-left: 20px;
+}
+
+.logot-1::before {
+    content: '';
+    background-color: darkred;
+    width: 60px;
+    height: 20px;
+    left: -20px;
+    top: 0;
+    position: absolute;
+    box-shadow: 0 0 40px black;
+}
+
+.logo-f {
+    position: relative;
+    width: 60px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.logo-f>div {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 100%;
+}
+
+.logof-1 {
+    background-color: darkred;
+    left: 0;
+}
+
+.logof-1::before {
+    content: '';
+    background-color: darkred;
+    width: 60px;
+    height: 20px;
+    left: 0px;
+    top: 0;
+    position: absolute;
+    box-shadow: 0 0 40px black;
+}
+
+.logof-1::after {
+    content: '';
+    background-color: darkred;
+    width: 60px;
+    height: 20px;
+    left: 0px;
+    top: 35px;
+    position: absolute;
+    box-shadow: 0 0 40px black;
+}
+
+.logo-l {
+    position: relative;
+    width: 60px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.logo-l>div {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 100%;
+}
+
+.logol-1 {
+    background-color: darkred;
+    left: 0;
+}
+
+.logol-1::before {
+    content: '';
+    background-color: darkred;
+    width: 60px;
+    height: 20px;
+    left: 0;
+    top: 80px;
+    position: absolute;
+    box-shadow: 0 0 40px black;
+}
+
+.logo-i {
+    position: relative;
+    width: 20px; /* La i solo son 20 puesto que solo es un palo vertical, los 20px de cada lado hacen los 60 de una letra normal. Si se dejaba en 60 quedaba descuadrado*/
+    height: 100px;
+    overflow: hidden;
+}
+
+.logo-i>div {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 100%;
+}
+
+.logoi-1 {
+    background-color: darkred;
+    left: 0;
+}
+
+.logo-x {
+    position: relative;
+    width: 60px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.logo-x>div {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 100%;
+}
+
+.logox-1 {
+    background-color: darkred;
+    left: 0;
+    z-index: 1;
+    transform: skewX(-22deg);
+    transform-origin: bottom left;
+    box-shadow: 0 0 40px black;
+}
+
+.logox-2 {
+    background-color: darkred;
+    left: 41px;
+    z-index: 1;
+    transform: skewX(22deg);
+    transform-origin: bottom left;
+    box-shadow: 0 0 40px black;
+}
