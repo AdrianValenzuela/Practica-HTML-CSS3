@@ -3,32 +3,58 @@
 }
 
 body {       
-    height: 100vh;
-    background: black;
-    margin: 0;
-    margin-top: 53px;
-    padding: 0;
+  height: 100vh;
+  background: black;
+  margin: 0;
+  margin-top: 53px;
+  padding: 0;
 }
 
 body > p {
-    color: white;
-    font-size: 2rem;
+  color: white;
+  font-size: 2rem;
 }
 
 .films {
   max-width: 900px;
   margin: 0 auto;
   padding: 3rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
 }
 
-.film-container{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
+.film-container{    
+  position: relative;
 }
 
 .film-container img {
-    height: 200px;
-    object-fit: cover;
-    object-position: center top;
+  width: 100%;
+  display: block;
+  height: 250px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.film-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
 }
