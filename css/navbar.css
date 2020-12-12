@@ -1,9 +1,12 @@
 .navbar {
-    background-color: #161A17;
+    background-color: darkgray;
     position: fixed;
     top: 0;
     width: 100%;
     height: 50px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navbar-list {
@@ -21,7 +24,226 @@
 }
 
 .navbar-item a {
-    color: white;
+    color: black;
     text-decoration: none;
     
+}
+
+.navbar-logo {
+    width: 300px;
+    margin: 0;
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-logo-n {
+    position: relative;
+    width: 30px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.navbar-logo-n>div {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 100%;
+}
+
+.navbar-logon-1 {
+    background-color: darkred;
+    left: 0;
+}
+
+.navbar-logon-2 {
+    background-color: darkred;
+    left: 0;
+    z-index: 1;
+    transform: skewX(21.8deg);
+    transform-origin: top left;
+}
+
+.navbar-logon-3 {
+    background-color: darkred;
+    right: 0;
+}
+
+.navbar-logo-a {
+    position: relative;
+    width: 30px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.navbar-logo-a>div {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 100%;
+}
+
+.navbar-logoa-1 {
+    background-color: darkred;
+    left: 0;
+    z-index: 1;
+    transform: skewX(-11.3deg);
+    transform-origin: bottom left;
+}
+
+.navbar-logoa-2 {
+    background-color: darkred;
+    right: 0;
+    z-index: 1;
+    transform: skewX(11.3deg);
+    transform-origin: bottom left;
+}
+
+/* para hacer la T me he basado en este codepen https://codepen.io/lenngren/pen/bNQLvJ. El resto de letras las he sacado en base a esta T */
+.navbar-logo-t {
+    position: relative;
+    width: 30px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.navbar-logo-t>div {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 100%;
+}
+
+.navbar-logot-1 {
+    background-color: darkred;
+    left: 0;
+    margin-left: 10px;
+}
+
+.navbar-logot-1::before {
+    content: '';
+    background-color: darkred;
+    width: 30px;
+    height: 10px;
+    left: -10px;
+    top: 0;
+    position: absolute;
+}
+
+.navbar-logo-f {
+    position: relative;
+    width: 30px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.navbar-logo-f>div {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 100%;
+}
+
+.navbar-logof-1 {
+    background-color: darkred;
+    left: 0;
+}
+
+.navbar-logof-1::before {
+    content: '';
+    background-color: darkred;
+    width: 30px;
+    height: 10px;
+    left: 0px;
+    top: 0;
+    position: absolute;
+}
+
+.navbar-logof-1::after {
+    content: '';
+    background-color: darkred;
+    width: 30px;
+    height: 10px;
+    left: 0px;
+    top: 20px;
+    position: absolute;
+}
+
+.navbar-logo-l {
+    position: relative;
+    width: 30px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.navbar-logo-l>div {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 100%;
+}
+
+.navbar-logol-1 {
+    background-color: darkred;
+    left: 0;
+}
+
+.navbar-logol-1::before {
+    content: '';
+    background-color: darkred;
+    width: 30px;
+    height: 10px;
+    left: 0;
+    top: 35px;
+    position: absolute;
+}
+
+.navbar-logo-i {
+    position: relative;
+    width: 10px; /* La i solo son 10 puesto que solo es un palo vertical, los 20px de cada lado hacen los 30 de una letra normal. Si se dejaba en 60 quedaba descuadrado*/
+    height: 45px;
+    overflow: hidden;
+}
+
+.navbar-logo-i>div {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 100%;
+}
+
+.navbar-logoi-1 {
+    background-color: darkred;
+    left: 0;
+}
+
+.navbar-logo-x {
+    position: relative;
+    width: 30px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.navbar-logo-x>div {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 100%;
+}
+
+.navbar-logox-1 {
+    background-color: darkred;
+    left: 0;
+    z-index: 1;
+    transform: skewX(-22deg);
+    transform-origin: bottom left;
+}
+
+.navbar-logox-2 {
+    background-color: darkred;
+    left: 19px;
+    z-index: 1;
+    transform: skewX(22deg);
+    transform-origin: bottom left;
 }

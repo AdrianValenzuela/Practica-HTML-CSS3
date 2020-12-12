@@ -2,17 +2,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {       
+body {
   height: 100vh;
   background: black;
   margin: 0;
   margin-top: 53px;
   padding: 0;
-}
-
-body > p {
-  color: white;
-  font-size: 2rem;
 }
 
 .films {
@@ -24,7 +19,7 @@ body > p {
   gap: 1rem;
 }
 
-.film-container{    
+.film-container {
   position: relative;
 }
 
@@ -45,16 +40,47 @@ body > p {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+.star {
+  visibility: hidden;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.star:before {
+  content: "\2605";
+  position: absolute;
+  visibility: visible;
+}
+.star:checked:before {
+  content: "\2606";
+  position: absolute;
 }
 
 .film-container:hover .overlay {
   opacity: 1;
 }
 
+.title {
+  margin: 0;
+  color: black;
+  font-size: 2rem;
+}
+
+.rate,
+.date {
+  margin: 0;
+  color: black;
+  font-size: 1.5rem;
+}
+
 .text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  text-align: center;
+  margin: 0;
+  color: black;
+  font-size: 1rem;
 }
