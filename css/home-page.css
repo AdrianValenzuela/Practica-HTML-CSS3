@@ -46,6 +46,7 @@ body {
   justify-content: space-between
 }
 
+/* http://jsfiddle.net/binaryben/aLx3m4k5/ */
 .star {
   visibility: hidden;
   font-size: 1.5rem;
