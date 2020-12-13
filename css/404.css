@@ -1,12 +1,6 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 body {       
-    height: 100vh;
-    background: black;
+    height: 100vh;    
     margin: 20px;
-    padding: 0;
     display: flex;
     justify-content: center;
 }
